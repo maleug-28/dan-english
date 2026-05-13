@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shows &amp; Tickets — Dan English</title>
+<meta name="description" content="Tour dates, presale tickets and contact for Dan English.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-screen-label="02 Shows & Tickets" class="page-shows">
+
+<canvas id="wallpaper" aria-hidden="true"></canvas>
+
+<header class="site-header" role="banner">
+  <a class="nav-item left" href="index.html">Home</a>
+  <a href="index.html" class="logo-link" aria-label="Dan English — home">
+    <img src="assets/logo.png" alt="Dan English">
+  </a>
+  <a class="nav-item right" href="index.html#shows">Shows</a>
+</header>
+
+<main>
+
+  <!-- SEATED WIDGET -->
+  <section style="padding-top: clamp(110px, 22vw, 177px)">
+    <div class="wrap">
+      <div class="ornament" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round">
+          <path d="M16 3 C16.6 11.4 20.6 15.4 29 16 C20.6 16.6 16.6 20.6 16 29 C15.4 20.6 11.4 16.6 3 16 C11.4 15.4 15.4 11.4 16 3 Z"/>
+        </svg>
+      </div>
+      <div class="section-title">
+        <h2>Shows</h2>
+      </div>
+      <figure class="show-poster">
+        <img src="assets/dan_elsewhere_Fall2026.jpg" alt="Dan English & special guests — Wednesday, September 23rd 2026, Elsewhere Rooftop, 599 Johnson Ave #1, Brooklyn, NY. Tickets $20. Doors 7pm." loading="lazy">
+      </figure>
+      <div class="shows-panel">
+        <ul class="shows-list" role="list">
+          <li class="show-row">
+            <div class="show-date">
+              <span class="show-date__month">Sep</span>
+              <span class="show-date__day">23</span>
+              <span class="show-date__year">2026</span>
+            </div>
+            <div class="show-venue">
+              <div class="show-venue__name">Elsewhere Rooftop</div>
+              <div class="show-venue__city">Brooklyn, NY</div>
+            </div>
+            <a class="show-cta" href="#" aria-label="Sign up for Elsewhere Rooftop, Brooklyn — Sep 23, 2026">Sign Up</a>
+          </li>
+        </ul>
+
+        <form class="notify" action="#" method="post" novalidate>
+          <label for="notify-email" class="notify__label">Get notified when new events are announced in your area</label>
+          <div class="notify__row">
+            <input id="notify-email" name="email" type="email" placeholder="you@somewhere.com" autocomplete="email" required>
+            <button type="submit" class="notify__btn">Notify Me</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="ornament" aria-hidden="true">
+    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round">
+      <path d="M16 3 C16.6 11.4 20.6 15.4 29 16 C20.6 16.6 16.6 20.6 16 29 C15.4 20.6 11.4 16.6 3 16 C11.4 15.4 15.4 11.4 16 3 Z"/>
+    </svg>
+  </div>
+
+  <!-- CONTACT -->
+  <section>
+    <div class="wrap">
+      <div class="section-title">
+        <span class="eyebrow">For Promoters, Press &amp; Industry</span>
+        <h2>Booking &amp; Contact</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="role">US &amp; Rest of World — Booking</span>
+          <div class="name">TBA Agency</div>
+          <a href="mailto:lschiffman@tbaagency.com">lschiffman@tbaagency.com</a>
+        </div>
+        <div class="contact-card">
+          <span class="role">UK &amp; EU — Booking</span>
+          <div class="name">Free Trade Agency</div>
+          <a href="mailto:owaine@freetradeagency.co.uk">owaine@freetradeagency.co.uk</a>
+        </div>
+        <div class="contact-card">
+          <span class="role">Management</span>
+          <div class="name">SEPT.</div>
+          <a href="mailto:samantha@sept.com">samantha@sept.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="row">
+    <span>© Dan English MMXXVI</span>
+    <span>·</span>
+    <a href="https://www.instagram.com/dan__english/?hl=en" target="_blank" rel="noopener" class="ig-link">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <rect x="3" y="3" width="18" height="18" rx="4"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="17.5" cy="6.5" r="0.9" fill="currentColor" stroke="none"/>
+      </svg>
+      Instagram
+    </a>
+    <span>·</span>
+    <span>site built by soledad design</span>
+  </div>
+</footer>
+
+<script src="assets/wallpaper.js"></script>
+
+</body>
+</html>

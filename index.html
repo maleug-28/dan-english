@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dan English</title>
+<meta name="description" content="Dan English — songwriter. New record out now.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-screen-label="01 Landing">
+
+<canvas id="wallpaper" aria-hidden="true"></canvas>
+<header class="site-header" role="banner">
+  <a class="nav-item left" href="index.html" aria-current="page">Home</a>
+  <a href="index.html" class="logo-link" aria-label="Dan English — home">
+    <img src="assets/logo.png" alt="Dan English">
+  </a>
+  <a class="nav-item right" href="#shows">Shows</a>
+</header>
+
+<main>
+
+  <!-- HERO PORTRAIT -->
+  <section class="hero">
+    <div class="hero-frame">
+      <img src="assets/portrait.jpeg" alt="Painted portrait of Dan English seated in a cloak, with a sword, a cat, a chalice, and castles in stormy hills behind him.">
+    </div>
+  </section>
+
+  <!-- TITLE -->
+  <section class="hero-title">
+  </section>
+
+  <div class="ornament" aria-hidden="true">
+    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2">
+      <path d="M16 4 L18 14 L28 16 L18 18 L16 28 L14 18 L4 16 L14 14 Z"/>
+      <circle cx="16" cy="16" r="1.4" fill="currentColor"/>
+    </svg>
+  </div>
+
+  <!-- LISTEN / FOLLOW -->
+  <section>
+    <div class="wrap">
+      <div class="section-title">
+        <h2>Listen</h2>
+      </div>
+      <div class="album-display">
+        <img src="assets/sky-record.png" alt="Sky Record by Dan English — vinyl sleeve with a Pegasus statue.">
+      </div>
+      <div class="link-grid link-grid--stack">
+        <a class="link-card" href="https://open.spotify.com/album/4ndQFijwXBbFqrh9OOBImP" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M7 9.5c3.5-1 7-.5 10 1.2M7.5 13c3-.8 6-.4 8.5 1M8 16c2.3-.6 4.8-.4 7 .8" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"/>
+          </svg>
+          <div>
+            <div class="label">Spotify</div>
+          </div>
+        </a>
+
+        <a class="link-card" href="https://music.apple.com/us/artist/dan-english/533750404" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="12" cy="12" r="11"/>
+            <path d="M10 16.5V8.5l6-1.5v8" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="9" cy="16.5" r="1.6" fill="currentColor" stroke="none"/>
+            <circle cx="15" cy="15"   r="1.6" fill="currentColor" stroke="none"/>
+          </svg>
+          <div>
+            <div class="label">Apple Music</div>
+          </div>
+        </a>
+
+        <a class="link-card" href="https://danenglish.bandcamp.com/album/sky-record" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3 6h14l-4 12H-1z" transform="translate(4 0)"/>
+          </svg>
+          <div>
+            <div class="label">Bandcamp</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="ornament" aria-hidden="true">
+    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2">
+      <path d="M16 4 L18 14 L28 16 L18 18 L16 28 L14 18 L4 16 L14 14 Z"/>
+      <circle cx="16" cy="16" r="1.4" fill="currentColor"/>
+    </svg>
+  </div>
+
+  <!-- SHOWS -->
+  <section id="shows">
+    <div class="wrap">
+      <div class="section-title">
+        <h2>Shows</h2>
+      </div>
+      <figure class="show-poster">
+        <img src="assets/dan_elsewhere_Fall2026.jpg" alt="Dan English & special guests — Wednesday, September 23rd 2026, Elsewhere Rooftop, 599 Johnson Ave #1, Brooklyn, NY. Tickets $20. Doors 7pm." loading="lazy">
+      </figure>
+      <div class="shows-panel">
+        <ul class="shows-list" role="list">
+          <li class="show-row">
+            <div class="show-date">
+              <span class="show-date__month">Sep</span>
+              <span class="show-date__day">23</span>
+              <span class="show-date__year">2026</span>
+            </div>
+            <div class="show-venue">
+              <div class="show-venue__name">Elsewhere Rooftop</div>
+              <div class="show-venue__city">Brooklyn, NY</div>
+            </div>
+            <a class="show-cta" href="#" aria-label="Sign up for Elsewhere Rooftop, Brooklyn — Sep 23, 2026">Sign Up</a>
+          </li>
+        </ul>
+
+        <form class="notify" action="#" method="post" novalidate>
+          <label for="notify-email-home" class="notify__label">Get notified when new events are announced in your area</label>
+          <div class="notify__row">
+            <input id="notify-email-home" name="email" type="email" placeholder="you@somewhere.com" autocomplete="email" required>
+            <button type="submit" class="notify__btn">Notify Me</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="ornament" aria-hidden="true">
+    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2">
+      <path d="M16 4 L18 14 L28 16 L18 18 L16 28 L14 18 L4 16 L14 14 Z"/>
+      <circle cx="16" cy="16" r="1.4" fill="currentColor"/>
+    </svg>
+  </div>
+
+  <!-- CONTACT -->
+  <section>
+    <div class="wrap">
+      <div class="section-title">
+        <h2>Contact</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="role">US &amp; Rest of World</span>
+          <div class="name">TBA Agency</div>
+          <a href="mailto:lschiffman@tbaagency.com">lschiffman@tbaagency.com</a>
+        </div>
+        <div class="contact-card">
+          <span class="role">UK &amp; EU</span>
+          <div class="name">Free Trade Agency</div>
+          <a href="mailto:owaine@freetradeagency.co.uk">owaine@freetradeagency.co.uk</a>
+        </div>
+        <div class="contact-card">
+          <span class="role">Management</span>
+          <div class="name">SEPT.</div>
+          <a href="mailto:samantha@sept.com">samantha@sept.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="row">
+    <span>© Dan English MMXXVI</span>
+    <span>·</span>
+    <a href="https://www.instagram.com/dan__english/?hl=en" target="_blank" rel="noopener" class="ig-link">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <rect x="3" y="3" width="18" height="18" rx="4"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="17.5" cy="6.5" r="0.9" fill="currentColor" stroke="none"/>
+      </svg>
+      Instagram
+    </a>
+    <span>·</span>
+    <span>site built by soledad design</span>
+  </div>
+</footer>
+
+<script src="assets/wallpaper.js"></script>
+
+</body>
+</html>
